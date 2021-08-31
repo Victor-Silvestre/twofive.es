@@ -1,7 +1,3 @@
-<?php
-define('WP_USE_THEMES', false);
-require('shop/wp-blog-header.php');
-?>
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -91,28 +87,6 @@ require('shop/wp-blog-header.php');
       <div class="swiper-container newsSwiper2">
         <h2 style="padding: 0 2.5vw; text-align:center; margin-top:30px">Últimas noticias</h2>
         <div class="swiper-wrapper">
-
-          <?php
-          $recent_posts = wp_get_recent_posts(array('numberposts' => 6 , 'post_type' => 'post' , 'post_status' => 'publish' ) );
-          foreach($recent_posts as $post) {
-            if ( has_post_thumbnail( $post['ID'] ) ) {
-              echo '<div class="swiper-slide">';
-              echo '<a href="', get_permalink($post['ID']), '"><figure class="blog-item-container">';
-              echo '<span class="blog-item-img">';
-              echo get_the_post_thumbnail( $post['ID']);
-              echo '</span>';
-              echo '<figcaption>';
-              echo '<h5><a class="blog-item-link" href="', get_permalink($post['ID']), '">', $post['post_title'], '</a></h5>';
-              echo '<p>';
-              echo get_the_excerpt( $post['ID']);
-              echo '<br><br><a href="', get_permalink($post['ID']), '" class="button-highlighted">Leer más</a>';
-              echo '</p>';
-              echo '</figcaption>';
-              echo '</figure></a>';
-              echo '</div>';
-            }
-          }
-          ?>
 
           <div class="swiper-slide">
             <a href="https://twofive.es/shop/?page_id=52">
