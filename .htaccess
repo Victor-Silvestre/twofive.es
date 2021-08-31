@@ -44,7 +44,7 @@ RewriteEngine On
 RewriteCond %{HTTP_REFERER} !^$
 RewriteCond %{REQUEST_FILENAME} -f
 RewriteCond %{REQUEST_FILENAME} \.(gif|jpe?g?|png)$ [NC]
-RewriteCond %{HTTP_REFERER} !^http(s)?://(.*?)\.?twofivegloves\.com [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(.*?)\.?twofive\.es [NC]
 RewriteRule \.(gif|jpe?g?|png)$ - [F,NC,L]
 </IfModule>
 #AIOWPS_PREVENT_IMAGE_HOTLINKS_END
