@@ -26,17 +26,6 @@
     <link rel="stylesheet" href="plugins/animate.4.0.0.min.css">
     <link rel="stylesheet" href="lib/css/cookiealert.css">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99821491-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-99821491-2');
-    </script>
-
-
   </head>
   <body id="index" onload="loader()">
 
@@ -110,7 +99,7 @@
       <div class="swiper-container newsSwiper2">
         <h2 style="padding: 0 2.5vw; text-align:center; margin-top:30px">Últimas noticias</h2>
         <div class="swiper-wrapper">
-          
+
           <div class="swiper-slide">
             <a href="https://twofivegloves.com/shop/?page_id=52">
               <figure class="blog-item-container" style="margin: 115px auto auto auto; width: 225px; text-align: center;">
@@ -200,7 +189,6 @@
     <script src="plugins/skrollr/skrollr.min.js"></script>
     <script src="plugins/swiper/swiper.min.js"></script>
     <script src="plugins/font-awesome/js/all.min.js"></script>
-    <script src="plugins/gtranslate.js"></script>
 
 
     <!-- Archivo personalizado de Javascript -->
