@@ -3,11 +3,6 @@ define('WP_USE_THEMES', false);
 require('shop/wp-blog-header.php');
 ?>
 
-<?php
-require_once 'vendor/autoload.php';
-use GeoIp2\Database\Reader;
-?>
-
 <!DOCTYPE html>
 <html lang="es">
   <head>
