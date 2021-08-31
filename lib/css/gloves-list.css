@@ -1,0 +1,831 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300;400;500;600;700&display=swap');
+
+html{
+  background: #212121;
+  height: -webkit-fill-available;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  background-color: #212121;
+}
+
+/*BACKGROUNDS*/
+
+.bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.background {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(bg-img/mobile-background-caro.jpg);
+  background-size: cover;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  position: fixed;
+  display: none;
+}
+
+@media screen and (max-width:992px){
+  .bg-video {
+    display: none;
+  }
+  .background{
+    display: flex;
+  }
+}
+
+/*ELEMENTS AND COLOR STYLES*/
+
+h1 {font-family: 'Teko', sans-serif; font-size: 3em;}
+h2 {font-family: 'Teko', sans-serif; font-size: 2.5em;}
+h3 {
+  font-family: 'Teko', sans-serif;
+  font-size: 2em;
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  -moz-block-height: 1.6;
+}
+
+.white{
+  color:#fafafa;
+}
+
+.silver{
+  color: #c0c0c0;
+}
+
+.button-link {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding-top: 4px;
+  text-align: center;
+  border: 1pt solid #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: "Teko";
+  font-size: 2em;
+  color: #fafafa;
+  display: block;
+  transition: 0.2s;
+}
+
+.button-link:hover {
+  text-decoration: none;
+  font-family: "Teko";
+  font-size: 2em;
+  color: #212121;
+  background-color: #fff;
+  display: block;
+  transition: 0.2s;
+}
+
+@media screen and (max-width:1024px){
+  .button-link {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    padding-top: 4px;
+    text-align: center;
+    border: 1pt solid #c0c0c0;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: "Teko";
+    font-size: 2em;
+    color: #fafafa;
+    display: block;
+    transition: 0.2s;
+  }
+  p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    -moz-block-height: 1.6;
+    font-size: 0.85rem;
+  }
+}
+
+img {
+  max-width: 100%;
+	opacity: 1;
+	transition: opacity 0.3s;
+}
+
+img[data-src] {
+	opacity: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/*MAIN STRUCTURE*/
+
+.wrapper {
+  width: 100%;
+  min-height: 750px;
+  background-image: linear-gradient(to top, #fafafa, #fafafa);
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+@media screen and (max-width: 992px) {
+  .wrapper {
+    height: auto;
+    min-height: calc(100vh - 65px);
+ }
+}
+
+@media screen and (max-width: 500px) {
+  #section00 .wrapper {
+    display: block;
+ }
+}
+
+
+/*** Header Styles ***/
+header {
+  width: 100vw;
+  height: 100vh;
+  background: #212121;
+  display: -webkit-box;
+  display: flex;
+}
+
+/*** Navigation Styles ***/
+nav {
+  width: 100vw;
+  height: 160px;
+  background: rgba(33,33,33,0);
+  display: grid;
+  grid-template-columns: 0.4fr 1.6fr;
+  position: fixed;
+  z-index: 9999999!important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+nav.navShadow {
+  box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
+  height: 65px;
+  background: #212121;
+}
+nav.navShadow #word-mark {
+  opacity: 1;
+  font-size: 2.1em;
+  font-weight: 600;
+  margin: 6px 0 0px 0px;
+}
+
+#brand,
+#menu{
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+ul {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-bottom: 5px;
+  list-style-type: none;
+}
+
+#brand {
+  padding-left: 40px;
+}
+
+#logo {
+  background-image: url("logo/TwoFive-GraphicMark.svg");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: 65px 65px;
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+nav.navShadow #logo {
+  background-image: url("logo/TwoFive-GraphicMark.svg");
+  background-repeat: no-repeat;
+  margin-top: 0.5em;
+  background-position:center;
+  background-size: 47px 47px;
+  width: 47px;
+  height: 47px;
+  transform: translateY(-3px);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#word-mark {
+  font-family: 'Teko', sans-serif;
+  font-size: 2.5em;
+  font-weight: 600;
+  color: white;
+  margin-top: 11px;
+  opacity: 1;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/*** Menu Styles ***/
+#menu {
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  padding-right: 40px;
+}
+
+#menu li {
+  margin-left: 30px;
+  min-width: 0px;
+  text-align: center;
+  transform: translateY(7px);
+}
+li a {
+  text-decoration: none;
+  font-family: "Teko";
+  font-size: 2em;
+  color: #fafafa;
+  display: block;
+}
+
+li a:hover {
+  text-decoration: none;
+  color: #bf6545;
+
+}
+
+li .backhome {
+  margin-right: 50px;
+  animation: 1s slideToLeft;
+  animation-iteration-count: 1;
+}
+
+@keyframes slideToLeft {
+  0% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+#menu-toggle {
+  width: 55px;
+  height: 55px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+#menu-toggle:hover .bar {
+  width: 25px;
+}
+#menu-toggle.closeMenu .bar {
+  width: 25px;
+}
+#menu-toggle.closeMenu .bar:first-child {
+  -webkit-transform: translateY(7px) rotate(45deg);
+          transform: translateY(7px) rotate(45deg);
+}
+#menu-toggle.closeMenu .bar:nth-child(2) {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+#menu-toggle.closeMenu .bar:last-child {
+  -webkit-transform: translateY(-7px) rotate(-45deg);
+          transform: translateY(-7px) rotate(-45deg);
+}
+.bar {
+  width: 25px;
+  height: 2px;
+  background: #fff;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.bar:nth-child(2) {
+  width: 20px;
+  margin: 5px 0;
+}
+.bar:last-child {
+  width: 15px;
+}
+
+/*** Hero Section Styles ***/
+#hero-section {
+  width: 100vw;
+  height: calc(100vh - 160px);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  margin-top: 160px;
+  background-color:#212121;
+}
+
+#hero-section img {
+  position: absolute;
+  min-width: 100vw;
+  min-height: calc(100% + 160px);
+  transform: translateY(-160px);
+  object-fit: cover;
+  object-position: 55% 0%;
+  mix-blend-mode: none;
+}
+
+img#replica-hero{
+  position: absolute;
+  min-width: 100vw;
+  min-height: calc(100% + 160px);
+  transform: translateY(-80px);
+  object-fit: cover;
+  object-position: 85% 20%;
+  mix-blend-mode: none;
+}
+
+.over-headline{
+  text-align: center;
+  font-size: 2.1vw;
+}
+
+#head-line {
+  font-family: 'Teko', sans-serif;
+  font-size: 8vw;
+  color: #fafafa;
+  text-align: center;
+  position: relative;
+}
+
+.under-headline{
+  text-align: center;
+  font-size: 1em;
+}
+
+.head-line-block{
+  z-index: 100;
+  position: absolute;
+  top: 33%;
+}
+
+@media screen and (max-width:1024px){
+
+  #hero-section img {
+    position: absolute;
+    min-width: 100vw;
+    min-height: calc(100% + 160px);
+    transform: translateY(-80px);
+    object-fit: cover;
+    object-position: 85% 20%;
+    mix-blend-mode: luminosity;
+  }
+
+  img#replica-hero{
+    position: absolute;
+    min-width: 100vw;
+    min-height: calc(100% + 160px);
+    transform: translateY(-80px);
+    object-fit: cover;
+    object-position: 30% 20%;
+    mix-blend-mode: luminosity;
+  }
+
+  .over-headline{
+    text-align: center;
+    font-size: 6vw;
+  }
+
+  #head-line {
+    font-family: 'Teko', sans-serif;
+    font-size: 14vw;
+    color: #fafafa;
+    text-align: center;
+    position: relative;
+  }
+
+  .under-headline{
+    text-align: center;
+    font-size: 0.9em;
+    padding: 10px;
+  }
+
+  .head-line-block{
+    z-index: 100;
+    position: absolute;
+    top: 32%;
+  }
+}
+
+.arrow{
+  position: absolute;
+  width: 100%;
+  font-size: 3vw;
+  color: #fafafa;
+  text-align: center;
+  bottom: 20px;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+  z-index: 100;
+}
+.arrow a{
+  text-decoration: none;
+  color: #fafafa;
+}
+
+#ScrollTop {
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width:1024px) {
+  .arrow{
+    position: absolute;
+    font-size: 35px;
+    color: #fafafa;
+    text-align: center;
+    bottom: 20px;
+  }
+}
+
+/*** Section Styles ***/
+section {
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.container{
+  padding: 30px;
+  border-radius: 8px;
+}
+
+@media screen and (max-width:992px) {
+  .container{
+    padding: 10px;
+  }
+}
+
+.social-contact a{
+  text-decoration: none;
+  font-family: "Teko";
+  font-size: 2em;
+  color: #fafafa;
+  display: block;
+  margin: 15px 40px 0 0;
+  float: left;
+}
+
+.social-contact a:hover {
+  text-decoration: none;
+  color: #bf6545;
+
+}
+
+@media screen and (max-width:992px) {
+  section {
+    max-height: auto;
+  }
+  .social-contact{
+    margin-top: 40px;
+  }
+  .social-contact a{
+    float: none;
+    margin-top: 30px;
+  }
+}
+
+#section02{
+  background-image: url('bg-img/keeper.jpg');
+}
+@media screen and (max-width: 992px) {
+
+  #section02{
+    background-image: url('bg-img/mobile-background.jpg');
+  }
+}
+
+#section03 img{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-height: 100%;
+}
+@media screen and (max-width:1279px){
+  #section03 img{
+    display: none;
+  }
+}
+
+section:nth-child(odd) {
+  background: #c0c0c0;
+}
+
+
+/*** Responsive Menu For Smaller Device ***/
+@media screen and (max-width: 800px) {
+
+  #brand {
+    padding-left: 20px;
+    z-index: 10;
+  }
+
+  #menu {
+    -webkit-box-pack: end;
+            justify-content: flex-end;
+    padding-right: 0px;
+  }
+
+  #menu-toggle {
+    display: -webkit-box;
+    display: flex;
+    padding-right: 40px;
+    z-index: 11;
+  }
+
+  #menu ul {
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    width: 100vw;
+    height: 0;
+    background: rgba(33,33,33,0.9);
+    position: absolute;
+    top: 160px;
+    -webkit-transform: translate(0,0);
+            transform: translate(0,0);
+    box-shadow: 0 5px 30px -4px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  #menu ul.showMenu {
+    margin-top: -160px;
+    height: 120vh;
+    width: 100vw;
+    padding: 0;
+  }
+  #menu ul.showMenu li {
+    height: 80px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  #menu li {
+    width: 50%;
+    height: 80px;
+    float: left;
+    opacity: 0;
+    visibility: hidden;
+    margin-left: 0;
+    -webkit-transition: all 0.3s 0.1s;
+    transition: all 0.3s 0.1s;
+  }
+  #menu li:first-child, #menu li:nth-child(2) {
+    margin-top: 180px;
+  }
+}
+
+/*PRODUCT SLIDER*/
+
+#germany06 {
+  background-image: url('bg-img/bg-germany06.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center
+}
+
+#southafrica10 {
+  background-image: url('bg-img/bg-southafrica10.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center
+}
+
+#austriaswitzerland08 {
+  background-image: url('bg-img/bg-austriaswitzerland08.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center
+}
+
+#spain82 {
+  background-image: url('bg-img/bg-spain82.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center
+}
+
+#polandukraine12 {
+  background-image: url('bg-img/bg-polandukraine12.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center
+}
+
+#uefaleagues20 {
+  background-image: url('bg-img/bg-uefaleagues20.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center
+}
+
+.flag-icon{
+  border-radius: 4px;
+}
+
+.hashtag {
+  color: #bf6545;
+}
+
+.product-line h4{
+  font-weight: 700;
+}
+
+.see-product {
+  font-family: Montserrat;
+font-weight: 600;
+color: #fff;
+border-radius: 4px;
+position: absolute;
+bottom: -3.3em;
+padding: 8px 10px 8px 10px;
+background: #bf6545;
+box-shadow: 1px 1px 4px #777;
+transition: 0.4s;
+}
+
+.see-product:hover{
+  text-decoration: none;
+  color: #212121;
+  transform: scale(1.1);
+  transition: 0.2s;
+  box-shadow: 5px 5px 8px #777;
+  background-color: #fff;
+}
+
+.swiper-wrapper {
+  height: 80%!important;
+  margin-top: 2em!important;
+}
+
+.swiper-container {
+  width: 100%;
+  height: auto;
+  padding: 11% 0!important;
+}
+
+.swiper-pagination{
+  display: none;
+}
+
+.swiper-pagination-bullet{
+  background-color: #bf6545!important;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .swiper-button-next, .swiper-button-prev{
+    display: block;
+    color: #212121!important;
+      transform: scale(0.6);
+      top: 85%!important;
+  }
+  .swiper-pagination{
+    display: block;
+    position: relative!important;
+    margin-top: 4.4em;
+    transform: scale(1.5)!important;
+  }
+  .swiper-wrapper {
+    height: 80%!important;
+    margin-top: 0em!important;
+  }
+}
+
+.swiper-slide > * {
+    -webkit-transform: translateZ(0px);
+}
+
+.swiper-slide {
+  -webkit-overflow-scrolling: touch;
+  text-align: center;
+  cursor: grab;
+  margin-top: 0.5em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  object-fit: contain;
+    width: 100%;
+    height: 100%;
+    max-height: 25em;
+}
+
+.product-name {
+  font-family: 'Teko';
+  font-weight: 600;
+  text-align: left;
+      font-size: 2em;
+      position: absolute;
+      left: 0px;
+      transform-origin: top left;
+      bottom: -40px;
+      /* padding: 10px; */
+      -moz-transform: rotate(270.0deg);
+      -o-transform: rotate(270.0deg);
+      -webkit-transform: rotate(270.0deg);
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=305 deg);
+      -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=270)";
+  }
+
+  .product-edition{
+    font-size: 0.6em;
+    line-height: 0;
+    color:#c0c0c0;
+    text-align:left;
+  }
+
+  .product-line-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    height: auto;
+  }
+
+  .product-line{
+    height: auto;
+  }
+
+  .product-line-navigation{
+    width: 40px;
+    margin-left: 4px;
+  }
+
+.up-arrow{
+  background-image: url(bg-img/down-arrow.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 20px;
+      height: 40%;
+      transform: rotate(180deg);
+      transform-origin: center;
+}
+
+.down-arrow{
+  background-image: url(bg-img/down-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 20px;
+    height: 40%;
+}

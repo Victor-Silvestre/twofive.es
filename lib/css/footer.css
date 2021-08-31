@@ -1,0 +1,317 @@
+footer{
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px -2px 8px #212121;
+}
+
+footer p{
+  font-size: 1em;
+  text-align: center;
+  padding: 0 0.5em;
+  margin: 0 0 1rem 0;
+}
+
+.club-logo, .academy-logo  {
+  margin: 0 auto;
+  max-width: 100%;
+  overflow: hidden;
+    }
+.club-logo-img{
+  width: 100px;
+  height: 100px;
+}
+
+.academy-logo-img{
+  width: 200px;
+  height: 100px;
+}
+
+.club-logo .swiper-slide, .academy-logo .swiper-slide {
+  width: 100px;
+  height: 100%;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    
+#maat-logo{
+  background-image: url("logo/academy/maat.png");
+}
+#maat-logo:hover{
+  background-image: url("logo/academy/maat.png");
+  transition: 0.2s;
+}
+#b1-logo{
+  background-image: url("logo/academy/b1-greyed.png");
+}
+#b1-logo:hover{
+  background-image: url("logo/academy/b1.png");
+  transition: 0.2s;
+}
+#costadelsol-logo{
+  background-image: url("logo/academy/costadelsol-greyed.png");
+}
+#costadelsol-logo:hover{
+  background-image: url("logo/academy/costadelsol.png");
+  transition: 0.2s;
+}
+
+#protalents-logo {
+  background-image: url("logo/academy/protalents-greyed.png");
+}
+
+#protalents-logo:hover{
+  background-image: url("logo/academy/protalents.png");
+  transition: 0.2s;
+}
+
+#jap-logo {
+  background-image: url("logo/academy/jap-greyed.png");
+}
+
+#jap-logo:hover{
+  background-image: url("logo/academy/jap.png");
+  transition: 0.2s;
+}
+
+#porterspenedes-logo {
+  background-image: url("logo/academy/porterspenedes-greyed.png");
+}
+
+#porterspenedes-logo:hover{
+  background-image: url("logo/academy/porterspenedes.png");
+  transition: 0.2s;
+}
+
+#santfeliu-logo {
+  background-image: url("logo/academy/santfeliu-greyed.png");
+}
+
+#santfeliu-logo:hover{
+  background-image: url("logo/academy/santfeliu.png");
+  transition: 0.2s;
+}
+
+#racingakra-logo {
+  background-image: url("logo/academy/racingakra-greyed.png");
+}
+
+#racingakra-logo:hover {
+  background-image: url("logo/academy/racingakra.png");
+}
+
+#ibizagoalkeepers-logo {
+  background-image: url("logo/academy/ibizagoalkeepers.png");
+}
+
+#albacete-logo {
+  background-image: url("logo/club/albacete-greyed.png");
+}
+
+#albacete-logo:hover{
+  background-image: url("logo/club/albacete.png");
+  transition: 0.2s;
+}
+
+#alcorcon-logo {
+  background-image: url("logo/club/alcorcon-greyed.png");
+}
+
+#alcorcon-logo:hover{
+  background-image: url("logo/club/alcorcon.png");
+  transition: 0.2s;
+}
+
+#barcelona-logo {
+  background-image: url("logo/club/barcelona-greyed.png");
+}
+
+#barcelona-logo:hover{
+  background-image: url("logo/club/barcelona.png");
+  transition: 0.2s;
+}
+
+#depor-logo {
+  background-image: url("logo/club/depor-greyed.png");
+}
+
+#depor-logo:hover{
+  background-image: url("logo/club/depor.png");
+  transition: 0.2s;
+}
+
+#eibar-logo {
+  background-image: url("logo/club/eibar-greyed.png");
+}
+
+#eibar-logo:hover{
+  background-image: url("logo/club/eibar.png");
+  transition: 0.2s;
+}
+
+#elche-logo {
+  background-image: url("logo/club/elche-greyed.png");
+}
+
+#elche-logo:hover{
+  background-image: url("logo/club/elche.png");
+  transition: 0.2s;
+}
+
+#espanyol-logo {
+  background-image: url("logo/club/espanyol-greyed.png");
+}
+
+#espanyol-logo:hover{
+  background-image: url("logo/club/espanyol.png");
+  transition: 0.2s;
+}
+
+#gijon-logo {
+  background-image: url("logo/club/gijon-greyed.png");
+}
+
+#gijon-logo:hover{
+  background-image: url("logo/club/gijon.png");
+  transition: 0.2s;
+}
+
+#llagostera-logo {
+  background-image: url("logo/club/llagostera-greyed.png");
+}
+
+#llagostera-logo:hover{
+  background-image: url("logo/club/llagostera.png");
+  transition: 0.2s;
+}
+
+#malaga-logo {
+  background-image: url("logo/club/malaga-greyed.png");
+}
+
+#malaga-logo:hover{
+  background-image: url("logo/club/malaga.png");
+  transition: 0.2s;
+}
+
+#osasuna-logo {
+  background-image: url("logo/club/osasuna-greyed.png");
+}
+
+#osasuna-logo:hover{
+  background-image: url("logo/club/osasuna.png");
+  transition: 0.2s;
+}
+
+#ponferradina-logo {
+  background-image: url("logo/club/ponferradina-greyed.png");
+}
+
+#ponferradina-logo:hover{
+  background-image: url("logo/club/ponferradina.png");
+  transition: 0.2s;
+}
+
+#santa-teresa-badajoz-logo {
+  background-image: url("logo/club/santa-teresa-badajoz-greyed.png");
+}
+
+#santa-teresa-badajoz-logo:hover{
+  background-image: url("logo/club/santa-teresa-badajoz.png");
+  transition: 0.2s;
+}
+
+.footer-links{
+  margin: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer-links:last-of-type{
+    margin: 0;
+    height: 30px;
+    font-size: 0.8em;
+    background-color: #2a2e31;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-links:nth-last-of-type(2){
+  margin: 0;
+  padding-top: 1em;
+  background-color: #212121;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-links h6{
+  font-family: "Teko";
+  font-size: 1.5em;
+}
+.footer-links a{
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-size: 1em;
+  color: #212121;
+}
+.footer-links a:hover{
+  color: #bf6545;
+}
+
+.footer-links ul{
+  display: block;
+  padding: 2em 3em;
+  width: auto;
+  max-width: 100%;
+}
+.footer-links li{
+  text-align: left;
+  margin: 0;
+}
+
+@media screen and (max-width:767px){
+  .footer-links ul{
+    display: block;
+    padding: 1.5em 1.5em;
+    width: 100%;
+  }
+}
+
+.twofive-icon{
+  height: 25px;
+  width: 20px;
+  margin: 0 0 0.6rem;
+  background-image: url(logo/TwoFive-GraphicMark.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (max-width:767px){
+  .twofive-icon{
+    height: 55px;
+    width: 33px;
+    margin: 0 0 0.6rem;
+    background-image: url(logo/TwoFive-GraphicMark.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  footer p{
+    display: block;
+    width: 100%;
+  }
+}
