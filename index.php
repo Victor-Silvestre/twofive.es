@@ -7,15 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="theme-color" content="#212121">
 
-    <link rel="alternate" hreflang="x-default" href="https://twofivegloves.com/en/">
-    <link rel="alternate" hreflang="es" href="https://twofivegloves.com/">
-    <link rel="alternate" hreflang="en" href="https://twofivegloves.com/en/">
-    <link rel="alternate" hreflang="nl" href="https://twofivegloves.com/nl/">
-    <link rel="alternate" hreflang="ro" href="https://twofivegloves.com/ro/">
-    <link rel="alternate" hreflang="ca" href="https://twofivegloves.com/ca/">
-    <link rel="alternate" hreflang="eu" href="https://twofivegloves.com/eu/">
-    <link rel="alternate" hreflang="gl" href="https://twofivegloves.com/gl/">
-
     <link rel="stylesheet" href="bootstrap-4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="lib/css/index.css?v=1.62">
     <link rel="stylesheet" href="lib/css/footer.css?v=1.3">
@@ -61,10 +52,7 @@
             <li><a href="#news">Noticias</a></li>
             <li><a href="#gloves">Guantes</a></li>
             <li><a href="#contact">Contacto</a></li>
-            <li><a href="https://twofivegloves.com/shop/">Tienda</a></li>
-            <li>
-              <?php include 'templates/language-select.php';?>
-          </li>
+            <li><a href="https://twofive.es/shop/">Tienda</a></li>
           </ul>
         </div>
       </nav>
@@ -73,7 +61,7 @@
         <div id="head-line">
           <h1 class="notranslate"><span style="color:#bf6545">#</span>alternativegoalkeeping</h1>
           <a href="#identity" class='button'>Conoce <span style="font-weight: 600">TWOFIVE</span></a>
-          <a href="https://twofivegloves.com/shop/" class='button-highlighted'>Tienda online</a>
+          <a href="https://twofive.es/shop/" class='button-highlighted'>Tienda online</a>
           <div class="arrow animate__animated animate__pulse"><a href="#identity"><i class="fas fa-angle-double-down"></i></a></div>
         </div>
       </div>
@@ -101,11 +89,11 @@
         <div class="swiper-wrapper">
 
           <div class="swiper-slide">
-            <a href="https://twofivegloves.com/shop/?page_id=52">
+            <a href="https://twofive.es/shop/?page_id=52">
               <figure class="blog-item-container" style="margin: 115px auto auto auto; width: 225px; text-align: center;">
                 <span class="blog-item-img"></span>
                 <figcaption>
-                  <h5><a class="blog-item-link" href="https://twofivegloves.com/shop/?page_id=52">Ver más noticias</a></h5>
+                  <h5><a class="blog-item-link" href="https://twofive.es/shop/?page_id=52">Ver más noticias</a></h5>
                 </figcaption>
               </figure>
             </a>
