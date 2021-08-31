@@ -1,3 +1,14 @@
+<?php
+define('WP_USE_THEMES', false);
+require('shop/wp-blog-header.php');
+?>
+
+<?php
+require_once 'vendor/autoload.php';
+use GeoIp2\Database\Reader;
+$reader = new Reader('/var/www/vhosts/38985175.servicio-online.net/twofive.es/shop/wp-content/uploads/woocommerce_uploads/iEVMvMI2WlbWcWno1Na2t5CdoqzxdzPC-GeoLite2-Country.mmdb');
+?>
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
