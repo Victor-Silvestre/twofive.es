@@ -3,22 +3,7 @@ define('WP_USE_THEMES', false);
 require('shop/wp-blog-header.php');
 ?>
 
-<?php
-require_once 'vendor/autoload.php';
-use GeoIp2\Database\Reader;
 
-// This creates the Reader object, which should be reused across
-// lookups.
-$reader = new Reader('/var/www/vhosts/38985175.servicio-online.net/twofive.es/shop/wp-content/uploads/woocommerce_uploads/iEVMvMI2WlbWcWno1Na2t5CdoqzxdzPC-GeoLite2-Country.mmdb');
-
-// Replace "city" with the appropriate method for your database, e.g.,
-// "country".
-$record = $reader->country('128.101.101.101');
-
-print($record->country->isoCode . "\n"); // 'US'
-print($record->country->name . "\n"); // 'United States'
-print($record->country->names['zh-CN'] . "\n"); // '美国'
-?>
 
 <!DOCTYPE html>
 <html lang="es">
