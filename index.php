@@ -6,7 +6,6 @@ require('shop/wp-blog-header.php');
 <?php
 require_once 'vendor/autoload.php';
 use GeoIp2\Database\Reader;
-$reader = new Reader('');
 ?>
 
 <!DOCTYPE html>
